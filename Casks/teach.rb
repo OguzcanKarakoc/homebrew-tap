@@ -11,7 +11,7 @@ cask "teach" do
   # Intel builds aren't published yet; guard so x64 Macs get a clear message
   # instead of an arm64 app that won't launch.
   depends_on arch: :arm64
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "Teach.app"
 
