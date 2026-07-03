@@ -1,6 +1,6 @@
 cask "tutorly" do
-  version "1.1.0"
-  sha256 "eb08e2b0dfb8c317abfa5ae5d9138c22bf0393c9a6859f7bcfe089e1732a98cc"
+  version "1.1.1"
+  sha256 "6c57c256b5576b9475e2f8b4d84f7969e916137d285ce8484fcda3d810d0cd95"
 
   url "https://github.com/OguzcanKarakoc/tutorly/releases/download/v#{version}/Tutorly-#{version}-mac-arm64.dmg"
   name "Tutorly"
