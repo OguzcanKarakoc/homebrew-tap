@@ -1,6 +1,6 @@
 # Homebrew Tap for Teach
 
-[Teach](https://github.com/OguzcanKarakoc/teach-electron) — an AI tutor that writes every course on the fly.
+[Teach](https://github.com/OguzcanKarakoc/teach) — an AI tutor that writes every course on the fly.
 
 ## Install
 
