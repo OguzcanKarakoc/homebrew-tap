@@ -17,9 +17,10 @@ cask "tutorly" do
   zap trash: "~/Library/Application Support/Tutorly"
 
   caveats <<~EOS
-    Tutorly is not yet code-signed or notarized. If macOS says the app is
-    "damaged", reinstall with --no-quarantine:
+    Tutorly is not yet code-signed or notarized, so macOS may block it on first
+    launch ("damaged" / "cannot verify"). If that happens, clear the quarantine
+    flag once, then open it normally:
 
-      brew install --cask --no-quarantine oguzcankarakoc/tap/tutorly
+      xattr -dr com.apple.quarantine "#{appdir}/Tutorly.app"
   EOS
 end

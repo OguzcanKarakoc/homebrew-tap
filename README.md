@@ -5,12 +5,16 @@
 ## Install
 
 ```sh
-brew install --cask --no-quarantine oguzcankarakoc/tap/tutorly
+brew install --cask oguzcankarakoc/tap/tutorly
 ```
 
-`--no-quarantine` is required for now: Tutorly isn't code-signed/notarized yet,
-so without it macOS reports the app as "damaged" and refuses to open it. The flag
-tells Homebrew not to attach the quarantine flag, so the app opens normally.
+Tutorly isn't code-signed/notarized yet, so on first launch macOS may say the
+app is "damaged" or "can't be verified". Clear the quarantine flag once, then
+open it normally:
+
+```sh
+xattr -dr com.apple.quarantine /Applications/Tutorly.app
+```
 
 > Apple Silicon (M-series) only at the moment. An Intel build will be added once
 > it's published.
