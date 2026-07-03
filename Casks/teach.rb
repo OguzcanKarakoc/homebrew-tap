@@ -2,8 +2,7 @@ cask "teach" do
   version "1.0.1"
   sha256 "f70b1c905eab2ee2c421076e074b1b4ea853de3cf60ca0a02355c6e29ae6f8e8"
 
-  url "https://github.com/OguzcanKarakoc/teach/releases/download/v#{version}/Teach-#{version}-mac-arm64.dmg",
-      verified: "github.com/OguzcanKarakoc/teach/"
+  url "https://github.com/OguzcanKarakoc/teach/releases/download/v#{version}/Teach-#{version}-mac-arm64.dmg"
   name "Teach"
   desc "AI tutor that writes every course on the fly"
   homepage "https://github.com/OguzcanKarakoc/teach"
